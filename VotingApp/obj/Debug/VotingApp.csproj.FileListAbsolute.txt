@@ -17,7 +17,6 @@ D:\gitHub\VotingApp\VotingApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlat
 D:\gitHub\VotingApp\VotingApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\gitHub\VotingApp\VotingApp\obj\Debug\VotingApp.dll
 D:\gitHub\VotingApp\VotingApp\obj\Debug\VotingApp.pdb
-D:\gitHub\VotingApp\VotingApp\obj\Debug\VotingApp.csprojResolveAssemblyReference.cache
 E:\TAKO..DON'T TOUCH\PROJECTS\VotingApp\VotingApp\bin\roslyn\csc.exe
 E:\TAKO..DON'T TOUCH\PROJECTS\VotingApp\VotingApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 E:\TAKO..DON'T TOUCH\PROJECTS\VotingApp\VotingApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -38,3 +37,4 @@ E:\TAKO..DON'T TOUCH\PROJECTS\VotingApp\VotingApp\bin\Microsoft.CodeDom.Provider
 E:\TAKO..DON'T TOUCH\PROJECTS\VotingApp\VotingApp\obj\Debug\VotingApp.csprojResolveAssemblyReference.cache
 E:\TAKO..DON'T TOUCH\PROJECTS\VotingApp\VotingApp\obj\Debug\VotingApp.dll
 E:\TAKO..DON'T TOUCH\PROJECTS\VotingApp\VotingApp\obj\Debug\VotingApp.pdb
+D:\gitHub\VotingApp\VotingApp\obj\Debug\VotingApp.csprojResolveAssemblyReference.cache
