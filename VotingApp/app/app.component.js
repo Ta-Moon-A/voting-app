@@ -9,13 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+var main_board_component_1 = require("./votingApp/main.board.component");
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: "voting-app",
-            template: "  this is voting app "
+            template: "<main-board></main-board>",
+            directives: [main_board_component_1.MainBoardComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

@@ -2,7 +2,7 @@
 import {MainBoardComponent} from './votingApp/main.board.component';
 
 export const CustomRoutes: Routes = [
-    { path: '', component: 'MainBoardComponent' }
+    //{path: '', component: 'MainBoardComponent'}
 
 ];
 

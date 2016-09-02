@@ -7,8 +7,8 @@ import {ContentComponent} from "./content.component";
     selector: "main-board",
     template: `<div class="mainBoard">
                     <header></header>
-                    <content><content>
-                    <footer></footer>
+                    <content></content>
+                    <footer class="footer"></footer>
                <div> `,
     directives: [FooterComponent, HeaderComponent, ContentComponent]
 })
