@@ -9,17 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var footer_component_1 = require("./footer.component");
+var header_component_1 = require("./header.component");
+var content_component_1 = require("./content.component");
+var MainBoardComponent = (function () {
+    function MainBoardComponent() {
     }
-    AppComponent = __decorate([
+    MainBoardComponent = __decorate([
         core_1.Component({
-            selector: "voting-app",
-            template: "  this is voting app "
+            selector: "main-board",
+            template: "<div class=\"mainBoard\">\n                    <header></header>\n                    <content><content>\n                    <footer></footer>\n               <div> ",
+            directives: [footer_component_1.FooterComponent, header_component_1.HeaderComponent, content_component_1.ContentComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], MainBoardComponent);
+    return MainBoardComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.MainBoardComponent = MainBoardComponent;
+//# sourceMappingURL=main.board.component.js.map
