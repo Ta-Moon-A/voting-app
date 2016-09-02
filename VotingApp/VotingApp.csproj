@@ -96,6 +96,10 @@
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\app.routes.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\votingApp\content.component.ts" />
+    <TypeScriptCompile Include="app\votingApp\footer.component.ts" />
+    <TypeScriptCompile Include="app\votingApp\header.component.ts" />
+    <TypeScriptCompile Include="app\votingApp\main.board.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

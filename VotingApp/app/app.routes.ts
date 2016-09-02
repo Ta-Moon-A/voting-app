@@ -1,7 +1,8 @@
 ﻿import { Routes, RouterModule } from '@angular/router';
+import {MainBoardComponent} from './votingApp/main.board.component';
 
 export const CustomRoutes: Routes = [
-    //{ path: '', component: '' },
+    { path: '', component: 'MainBoardComponent' }
 
 ];
 
