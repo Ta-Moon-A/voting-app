@@ -3,11 +3,11 @@
 
 @Component({
     selector: "footer",
-    template: `<a href="https://github.com/nagasaki1991/VotingApp" target="_blank">
-                    <i class="fa fa-github-square" aria-hidden="true"></i>jnlkkljkojkljlkjlk
+    template: `<a href="https://github.com/nagasaki1991/VotingApp" target="_blank" style="color : white"> 
+                   <i class="fa fa-github fa-3" aria-hidden="true"></i>
                </a>
- <i class="fa fa-github-square" aria-hidden="true"></i>
-               <span class="pull-right ng-binding">© 2015 Copyright.</span>`
+                   <br>
+               <span>© 2015 Copyright.</span>`
 })
 
 export class FooterComponent {
