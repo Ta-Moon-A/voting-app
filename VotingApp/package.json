@@ -58,7 +58,8 @@
     "karma-htmlfile-reporter": "^0.2.2",
     "karma-jasmine": "^0.3.8",
     "protractor": "^3.3.0",
-    "rimraf": "^2.5.2"
+    "rimraf": "^2.5.2",
+    "materialize-css": "^0.97.7"
   },
   "repository": { }
 }
