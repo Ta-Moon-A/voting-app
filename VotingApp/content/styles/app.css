@@ -21,6 +21,15 @@
     text-align: center;
 }
 
+.footerIcon {
+    color: mediumturquoise;
+    text-decoration: none;
+}
+
+    .footerIcon:hover {
+        color: white;
+        text-decoration: none;
+    }
 
 .loading {
     color: #ffffff;

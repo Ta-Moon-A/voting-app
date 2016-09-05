@@ -3,8 +3,8 @@
 
 @Component({
     selector: "footer",
-    template: `<a href="https://github.com/nagasaki1991/VotingApp" target="_blank" style="color : white"> 
-                   <i class="fa fa-github fa-3" aria-hidden="true"></i>
+    template: `<a href="https://github.com/nagasaki1991/VotingApp" target="_blank" class="footerIcon"> 
+                   <i class="fa fa-github fa-2x" aria-hidden="true"></i>
                </a>
                    <br>
                <span>© 2015 Copyright.</span>`

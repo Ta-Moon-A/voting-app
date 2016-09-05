@@ -15,7 +15,7 @@ var FooterComponent = (function () {
     FooterComponent = __decorate([
         core_1.Component({
             selector: "footer",
-            template: "<a href=\"https://github.com/nagasaki1991/VotingApp\" target=\"_blank\" style=\"color : white\"> \n                   <i class=\"fa fa-github fa-3\" aria-hidden=\"true\"></i>\n               </a>\n                   <br>\n               <span>\u00A9 2015 Copyright.</span>"
+            template: "<a href=\"https://github.com/nagasaki1991/VotingApp\" target=\"_blank\" class=\"footerIcon\"> \n                   <i class=\"fa fa-github fa-2x\" aria-hidden=\"true\"></i>\n               </a>\n                   <br>\n               <span>\u00A9 2015 Copyright.</span>"
         }), 
         __metadata('design:paramtypes', [])
     ], FooterComponent);
