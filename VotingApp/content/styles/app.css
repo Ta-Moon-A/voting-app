@@ -9,7 +9,6 @@
 }
 
 .mainBoard {
-    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
     min-height: 100%;
@@ -18,11 +17,15 @@
 }
 
 .footer {
-    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
 }
 
 .footerIcon {
-    color: mediumturquoise;
+    color: #112222;
     text-decoration: none;
 }
 
