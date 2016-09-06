@@ -7,7 +7,7 @@
                      <div class="col s3">
                         <div style="float : left">
                         <a href="/" class="Link">
-                            <img src="./content/images/logo3.png" alt="Logo" width="200" height="200">
+                           
                         </a>
                      </div>
                      </div>
@@ -34,3 +34,6 @@
 export class HeaderComponent {
 
 }
+
+
+// <img src="./content/images/logo3.png" alt="Logo" width="200" height="200">
