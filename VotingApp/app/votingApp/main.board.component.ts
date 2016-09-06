@@ -5,10 +5,10 @@ import {ContentComponent} from "./content.component";
 
 @Component({
     selector: "main-board",
-    template: `<div class="mainBoard">
-                    <header></header>
-                    <content></content>
-                    <footer class="footer"></footer>
+    template: `<div class="container mainBoard">
+                    <header ></header>
+                   
+                    <footer class="center-align footer"></footer>
                <div> `,
     directives: [FooterComponent, HeaderComponent, ContentComponent]
 })
@@ -16,3 +16,6 @@ import {ContentComponent} from "./content.component";
 export class MainBoardComponent {
 
 }
+
+
+// <content></content>

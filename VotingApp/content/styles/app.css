@@ -9,19 +9,14 @@
 }
 
 .mainBoard {
-    margin: 0 auto;
-    padding: 20px;
-    min-height: 100%;
-    text-align: center;
-    padding-bottom: 100px;
+    padding: 10px;
 }
 
 .footer {
     position: absolute;
+    bottom: 5px;
     left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
+    right: 0;
 }
 
 .footerIcon {
@@ -31,6 +26,10 @@
 
     .footerIcon:hover {
         color: white;
+        text-decoration: none;
+    }
+
+    .footerIcon:after {
         text-decoration: none;
     }
 

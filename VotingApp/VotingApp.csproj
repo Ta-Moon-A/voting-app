@@ -69,6 +69,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="content\images\bodyback.png" />
+    <Content Include="content\images\logo1.png" />
+    <Content Include="content\images\logo2.jpg" />
+    <Content Include="content\images\logo3.png" />
     <Content Include="content\styles\app.css" />
     <Content Include="content\styles\fontAwesome\font-awesome.css" />
     <Content Include="content\styles\fontAwesome\font-awesome.min.css" />
