@@ -73,8 +73,6 @@
     <Content Include="content\images\logo2.jpg" />
     <Content Include="content\images\logo3.png" />
     <Content Include="content\styles\app.css" />
-    <Content Include="content\styles\fontAwesome\font-awesome.css" />
-    <Content Include="content\styles\fontAwesome\font-awesome.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
