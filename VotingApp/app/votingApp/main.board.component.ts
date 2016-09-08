@@ -6,10 +6,17 @@ import {ContentComponent} from "./content.component";
 @Component({
     selector: "main-board",
     template: `<div class="container mainBoard">
-                    <header ></header>
-                   
-                    <footer class="center-align footer"></footer>
-               <div> `,
+                     
+                   <h1>Component Router</h1>
+                      
+                  <nav>
+                    <a [routerLink]="['']">Main Board</a> |
+                    <a [routerLink]="['/voting-item']">New Item</a> |
+                  </nav>
+
+                  <router-outlet></router-outlet>
+
+                <div> `,
     directives: [FooterComponent, HeaderComponent, ContentComponent]
 })
 
@@ -18,4 +25,5 @@ export class MainBoardComponent {
 }
 
 
-// <content></content>
+//   <header></header>
+// <footer class="center-align footer"></footer>

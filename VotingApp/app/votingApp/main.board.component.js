@@ -18,7 +18,7 @@ var MainBoardComponent = (function () {
     MainBoardComponent = __decorate([
         core_1.Component({
             selector: "main-board",
-            template: "<div class=\"container mainBoard\">\n                    <header ></header>\n                   \n                    <footer class=\"center-align footer\"></footer>\n               <div> ",
+            template: "<div class=\"container mainBoard\">\n                     \n                   <h1>Component Router</h1>\n                      \n                  <nav>\n                    <a [routerLink]=\"['']\">Main Board</a> |\n                    <a [routerLink]=\"['/voting-item']\">New Item</a> |\n                  </nav>\n\n                  <router-outlet></router-outlet>\n\n                <div> ",
             directives: [footer_component_1.FooterComponent, header_component_1.HeaderComponent, content_component_1.ContentComponent]
         }), 
         __metadata('design:paramtypes', [])
@@ -26,5 +26,6 @@ var MainBoardComponent = (function () {
     return MainBoardComponent;
 }());
 exports.MainBoardComponent = MainBoardComponent;
-// <content></content> 
+//   <header></header>
+// <footer class="center-align footer"></footer> 
 //# sourceMappingURL=main.board.component.js.map

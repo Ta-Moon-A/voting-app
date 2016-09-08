@@ -9,20 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-//import {MainBoardComponent} from "./votingApp/main.board.component";
-var AppComponent = (function () {
-    function AppComponent() {
+var GithubLoginComponent = (function () {
+    function GithubLoginComponent() {
     }
-    AppComponent = __decorate([
+    GithubLoginComponent.prototype.ngOnInit = function () {
+        debugger;
+        window.location.href = "https://github.com/login/oauth/authorize?scope=user:email&client_id=d0e3f88b72ae3bb57b0c";
+    };
+    GithubLoginComponent = __decorate([
         core_1.Component({
-            selector: "voting-app",
-            template: "sdfsdfsdfsdfsdfsdfsdfsd",
-            directives: []
+            selector: "header",
+            template: ""
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], GithubLoginComponent);
+    return GithubLoginComponent;
 }());
-exports.AppComponent = AppComponent;
-//<main-board></main-board> 
-//# sourceMappingURL=app.component.js.map
+exports.GithubLoginComponent = GithubLoginComponent;
+//# sourceMappingURL=github.login.component.js.map

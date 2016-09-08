@@ -4,7 +4,7 @@ import { FormsModule}   from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent }  from './app.component';
-import { CustomRouting }       from './app.routes';
+import { CustomRouting, appRoutingProviders }       from './app.routes';
 
 
 @NgModule({
@@ -14,6 +14,7 @@ import { CustomRouting }       from './app.routes';
         CustomRouting
     ],
     declarations: [AppComponent],
+    providers: [appRoutingProviders],
     bootstrap: [AppComponent]
 })
 

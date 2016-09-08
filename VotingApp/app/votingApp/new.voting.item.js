@@ -9,20 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-//import {MainBoardComponent} from "./votingApp/main.board.component";
-var AppComponent = (function () {
-    function AppComponent() {
+var VotingItemComponent = (function () {
+    function VotingItemComponent() {
     }
-    AppComponent = __decorate([
+    VotingItemComponent = __decorate([
+        core_1.Injectable(),
         core_1.Component({
-            selector: "voting-app",
-            template: "sdfsdfsdfsdfsdfsdfsdfsd",
-            directives: []
+            selector: "voting-item",
+            template: "new item "
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], VotingItemComponent);
+    return VotingItemComponent;
 }());
-exports.AppComponent = AppComponent;
-//<main-board></main-board> 
-//# sourceMappingURL=app.component.js.map
+exports.VotingItemComponent = VotingItemComponent;
+//# sourceMappingURL=new.voting.item.js.map

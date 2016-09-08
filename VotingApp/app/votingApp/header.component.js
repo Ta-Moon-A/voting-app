@@ -9,18 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
 var HeaderComponent = (function () {
-    function HeaderComponent() {
+    function HeaderComponent(_router) {
+        this._router = _router;
     }
+    HeaderComponent.prototype.onGithubAuth = function () {
+        debugger;
+        this._router.navigate(['/auth-github']);
+    };
     HeaderComponent = __decorate([
         core_1.Component({
             selector: "header",
-            template: "<div class=\"row\">\n                     <div class=\"col s3\">\n                        <div style=\"float : left\">\n                        <a href=\"/\" class=\"Link\">\n                           \n                        </a>\n                     </div>\n                     </div>\n                     <div class=\"col s6\"></div>\n                     <div class=\"col s3\">\n                            <div class=\"float : right\">\n                                <a class=\"waves-effect waves-light btn  teal lighten-3\" style=\"width : 100%\">\n                                       <i class=\"fa fa-github fa-2x\" aria-hidden=\"true\"> </i> Log in with Github\n                                </a>\n                                <br><br>\n                                <a class=\"waves-effect waves-light btn  teal lighten-3\" style=\"width : 100%\">\n                                      <i class=\"fa fa-facebook fa-2x\" aria-hidden=\"true\"> </i> Log in with Facebook\n                                </a>\n                            </div>\n                     </div>\n                </div>\n\n\n\n               \n               "
+            template: "<div class=\"row\">\n                     <div class=\"col s3\">\n                        <div style=\"float : left\">\n                        <a href=\"/\" class=\"Link\">\n                           \n                        </a>\n                     </div>\n                     </div>\n                     <div class=\"col s6\"></div>\n                     <div class=\"col s3\">\n                            <div class=\"float : right\">\n                                <a class=\"waves-effect waves-light btn  teal lighten-3\" style=\"width : 100%\" (click)=\"onGithubAuth()\" >\n                                       <i class=\"fa fa-github fa-2x\" aria-hidden=\"true\"></i>&nbsp;&nbsp;Log in\n                                </a>\n                                <br><br>\n                                <a class=\"waves-effect waves-light btn  light-blue darken-4\" style=\"width : 100%\">\n                                      <i class=\"fa fa-facebook fa-2x\" aria-hidden=\"true\"></i>&nbsp;&nbsp;Log in\n                                </a>\n                            </div>\n                     </div>\n                </div>"
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], HeaderComponent);
     return HeaderComponent;
 }());
 exports.HeaderComponent = HeaderComponent;
-// <img src="./content/images/logo3.png" alt="Logo" width="200" height="200"> 
 //# sourceMappingURL=header.component.js.map

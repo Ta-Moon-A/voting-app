@@ -1,13 +1,14 @@
 ﻿import {Component} from "@angular/core";
-import {MainBoardComponent} from "./votingApp/main.board.component";
+//import {MainBoardComponent} from "./votingApp/main.board.component";
 
 
 @Component({
     selector: "voting-app",
-    template: `<main-board></main-board>`,
-    directives: [MainBoardComponent]
+    template: `sdfsdfsdfsdfsdfsdfsdfsd`,
+    directives: []
 })
 
 export class AppComponent {
 
 }
+//<main-board></main-board>

@@ -25,6 +25,7 @@ var AppModule = (function () {
                 app_routes_1.CustomRouting
             ],
             declarations: [app_component_1.AppComponent],
+            providers: [app_routes_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
