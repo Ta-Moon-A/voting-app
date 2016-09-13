@@ -18,7 +18,7 @@ var GithubLoginComponent = (function () {
     };
     GithubLoginComponent = __decorate([
         core_1.Component({
-            selector: "header",
+            selector: "github-login",
             template: ""
         }), 
         __metadata('design:paramtypes', [])

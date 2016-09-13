@@ -79,7 +79,6 @@
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
     <Content Include="typings.json" />
-    <Content Include="server.rb" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -106,7 +105,7 @@
     <TypeScriptCompile Include="app\votingApp\footer.component.ts" />
     <TypeScriptCompile Include="app\votingApp\github.login.component.ts" />
     <TypeScriptCompile Include="app\votingApp\header.component.ts" />
-    <TypeScriptCompile Include="app\votingApp\main.board.component.ts" />
+    <TypeScriptCompile Include="app\votingApp\navigation.component.ts" />
     <TypeScriptCompile Include="app\votingApp\new.voting.item.ts" />
   </ItemGroup>
   <ItemGroup>

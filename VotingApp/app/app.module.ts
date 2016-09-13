@@ -7,10 +7,9 @@ import { AppComponent }  from './app.component';
 import { routing, appRoutingProviders }   from './app.routing';
 
 
-import {MainBoardComponent} from './votingApp/main.board.component';
 import {GithubLoginComponent} from './votingApp/github.login.component';
 import {VotingItemComponent} from './votingApp/new.voting.item';
-
+import {NavigationComponent} from './votingApp/navigation.component';
 
 @NgModule({
     imports: [BrowserModule,
@@ -21,7 +20,7 @@ import {VotingItemComponent} from './votingApp/new.voting.item';
     declarations: [AppComponent,
         VotingItemComponent,
         GithubLoginComponent,
-        MainBoardComponent],
+        NavigationComponent],
 
     providers: [appRoutingProviders],
     bootstrap: [AppComponent]

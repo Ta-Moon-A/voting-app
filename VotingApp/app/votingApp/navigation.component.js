@@ -9,20 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var NavigationComponent = (function () {
+    function NavigationComponent() {
     }
-    AppComponent = __decorate([
+    NavigationComponent = __decorate([
         core_1.Component({
-            selector: "voting-app",
-            template: " <header></header>\n                \n                <navigation></navigation>\n                <router-outlet></router-outlet>\n\n                <footer></footer>",
+            selector: "navigation",
+            template: "     <nav>\n                        <a routerLink=\"/\" routerLinkActive=\"active\">Main Board</a>\n                        <a routerLink=\"/voting-item\" routerLinkActive=\"active\">New Item</a>\n                    </nav>"
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], NavigationComponent);
+    return NavigationComponent;
 }());
-exports.AppComponent = AppComponent;
-/*
-                 
-*/ 
-//# sourceMappingURL=app.component.js.map
+exports.NavigationComponent = NavigationComponent;
+//# sourceMappingURL=navigation.component.js.map

@@ -14,9 +14,9 @@ var forms_1 = require('@angular/forms');
 var http_1 = require('@angular/http');
 var app_component_1 = require('./app.component');
 var app_routing_1 = require('./app.routing');
-var main_board_component_1 = require('./votingApp/main.board.component');
 var github_login_component_1 = require('./votingApp/github.login.component');
 var new_voting_item_1 = require('./votingApp/new.voting.item');
+var navigation_component_1 = require('./votingApp/navigation.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -29,7 +29,7 @@ var AppModule = (function () {
             declarations: [app_component_1.AppComponent,
                 new_voting_item_1.VotingItemComponent,
                 github_login_component_1.GithubLoginComponent,
-                main_board_component_1.MainBoardComponent],
+                navigation_component_1.NavigationComponent],
             providers: [app_routing_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]
         }), 

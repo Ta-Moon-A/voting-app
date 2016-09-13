@@ -2,9 +2,9 @@
 import { ModuleWithProviders } from '@angular/core';
 
 
-import {MainBoardComponent} from './votingApp/main.board.component';
 import {GithubLoginComponent} from './votingApp/github.login.component'
 import {VotingItemComponent} from './votingApp/new.voting.item';
+import {AppComponent} from './app.component';
 
 export const appRoutes: Routes = [
 
