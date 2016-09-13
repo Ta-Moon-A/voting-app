@@ -1,7 +1,6 @@
 {
   "name": "angular2-quickstart",
   "version": "1.0.0",
-  "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
