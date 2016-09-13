@@ -13,7 +13,6 @@ var VotingItemComponent = (function () {
     function VotingItemComponent() {
     }
     VotingItemComponent = __decorate([
-        core_1.Injectable(),
         core_1.Component({
             selector: "voting-item",
             template: "new item "

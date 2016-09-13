@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+var core_2 = require('@angular/core');
 var footer_component_1 = require("./footer.component");
 var header_component_1 = require("./header.component");
 var content_component_1 = require("./content.component");
@@ -18,8 +19,10 @@ var MainBoardComponent = (function () {
     MainBoardComponent = __decorate([
         core_1.Component({
             selector: "main-board",
-            template: "<div class=\"container mainBoard\">\n                     \n                   <h1>Component Router</h1>\n                      \n                  <nav>\n                    <a [routerLink]=\"['']\">Main Board</a> |\n                    <a [routerLink]=\"['/voting-item']\">New Item</a> |\n                  </nav>\n\n                  <router-outlet></router-outlet>\n\n                <div> ",
-            directives: [footer_component_1.FooterComponent, header_component_1.HeaderComponent, content_component_1.ContentComponent]
+            template: "<div class=\"container mainBoard\">\n                     \n                   <h1>Component Router</h1>\n                      \n                      <nav>\n                        <a routerLink=\"/\" routerLinkActive=\"active\">Main Board</a>\n                        <a routerLink=\"/voting-item\" routerLinkActive=\"active\">New Item</a>\n                      </nav>\n                  <router-outlet></router-outlet>\n\n                <div> "
+        }),
+        core_2.NgModule({
+            declarations: [footer_component_1.FooterComponent, header_component_1.HeaderComponent, content_component_1.ContentComponent],
         }), 
         __metadata('design:paramtypes', [])
     ], MainBoardComponent);

@@ -13,7 +13,10 @@ var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
 var http_1 = require('@angular/http');
 var app_component_1 = require('./app.component');
-var app_routes_1 = require('./app.routes');
+var app_routing_1 = require('./app.routing');
+var main_board_component_1 = require('./votingApp/main.board.component');
+var github_login_component_1 = require('./votingApp/github.login.component');
+var new_voting_item_1 = require('./votingApp/new.voting.item');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -22,10 +25,12 @@ var AppModule = (function () {
             imports: [platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
                 http_1.HttpModule,
-                app_routes_1.CustomRouting
-            ],
-            declarations: [app_component_1.AppComponent],
-            providers: [app_routes_1.appRoutingProviders],
+                app_routing_1.routing],
+            declarations: [app_component_1.AppComponent,
+                new_voting_item_1.VotingItemComponent,
+                github_login_component_1.GithubLoginComponent,
+                main_board_component_1.MainBoardComponent],
+            providers: [app_routing_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

@@ -1,4 +1,5 @@
 ﻿import {Component} from "@angular/core";
+import { NgModule }      from '@angular/core';
 import {FooterComponent} from "./footer.component";
 import {HeaderComponent} from "./header.component";
 import {ContentComponent} from "./content.component";
@@ -9,16 +10,21 @@ import {ContentComponent} from "./content.component";
                      
                    <h1>Component Router</h1>
                       
-                  <nav>
-                    <a [routerLink]="['']">Main Board</a> |
-                    <a [routerLink]="['/voting-item']">New Item</a> |
-                  </nav>
-
+                      <nav>
+                        <a routerLink="/" routerLinkActive="active">Main Board</a>
+                        <a routerLink="/voting-item" routerLinkActive="active">New Item</a>
+                      </nav>
                   <router-outlet></router-outlet>
 
-                <div> `,
-    directives: [FooterComponent, HeaderComponent, ContentComponent]
+                <div> `
+
 })
+
+@NgModule({
+    declarations: [FooterComponent, HeaderComponent, ContentComponent],
+
+})
+
 
 export class MainBoardComponent {
 

@@ -1,6 +1,5 @@
-﻿import {Component, Injectable} from "@angular/core";
+﻿import {Component} from "@angular/core";
 
-@Injectable()
 @Component({
     selector: "voting-item",
     template: `new item `
