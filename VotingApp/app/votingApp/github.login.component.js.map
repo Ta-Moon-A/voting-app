@@ -1,1 +1,1 @@
-{"version":3,"file":"github.login.component.js","sourceRoot":"","sources":["github.login.component.ts"],"names":[],"mappings":";;;;;;;;;;AAAA,qBAAgC,eAAe,CAAC,CAAA;AAOhD;IAAA;IAMA,CAAC;IAJG,uCAAQ,GAAR;QACI,QAAQ,CAAC;QACT,MAAM,CAAC,QAAQ,CAAC,IAAI,GAAG,0FAA0F,CAAC;IACtH,CAAC;IAVL;QAAC,gBAAS,CAAC;YACP,QAAQ,EAAE,cAAc;YACxB,QAAQ,EAAE,EAAE;SACf,CAAC;;4BAAA;IAQF,2BAAC;AAAD,CAAC,AAND,IAMC;AANY,4BAAoB,uBAMhC,CAAA"}
+{"version":3,"file":"github.login.component.js","sourceRoot":"","sources":["github.login.component.ts"],"names":[],"mappings":""}

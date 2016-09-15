@@ -68,11 +68,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="content\styles\app1.component.css" />
+    <Content Include="content\styles\dashboard.component.css" />
+    <Content Include="content\styles\hero-detail.component.css" />
+    <Content Include="content\styles\heroes.component.css" />
     <Content Include="content\images\bodyback.png" />
     <Content Include="content\images\logo1.png" />
     <Content Include="content\images\logo2.jpg" />
     <Content Include="content\images\logo3.png" />
     <Content Include="content\styles\app.css" />
+    <Content Include="content\styles\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
@@ -95,18 +100,22 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="app\votingApp\" />
+  </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\app.routing.ts" />
+    <TypeScriptCompile Include="app\heroSample\footer.component.ts" />
+    <TypeScriptCompile Include="app\heroSample\dashboard.component.ts" />
+    <TypeScriptCompile Include="app\heroSample\header.component.ts" />
+    <TypeScriptCompile Include="app\heroSample\hero-detail.component.ts" />
+    <TypeScriptCompile Include="app\heroSample\hero.service.ts" />
+    <TypeScriptCompile Include="app\heroSample\heroes.component.ts" />
+    <TypeScriptCompile Include="app\heroSample\heroItem.ts" />
+    <TypeScriptCompile Include="app\heroSample\mock-heroes.ts" />
     <TypeScriptCompile Include="app\main.ts" />
-    <TypeScriptCompile Include="app\votingApp\content.component.ts" />
-    <TypeScriptCompile Include="app\votingApp\footer.component.ts" />
-    <TypeScriptCompile Include="app\votingApp\github.login.component.ts" />
-    <TypeScriptCompile Include="app\votingApp\header.component.ts" />
-    <TypeScriptCompile Include="app\votingApp\navigation.component.ts" />
-    <TypeScriptCompile Include="app\votingApp\new.voting.item.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

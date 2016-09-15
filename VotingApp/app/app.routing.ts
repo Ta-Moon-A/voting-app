@@ -2,15 +2,15 @@
 import { ModuleWithProviders } from '@angular/core';
 
 
-import {GithubLoginComponent} from './votingApp/github.login.component'
-import {VotingItemComponent} from './votingApp/new.voting.item';
-import {AppComponent} from './app.component';
+import {HeroesComponent} from './heroSample/heroes.component';
+import {DashboardComponent} from './heroSample/dashboard.component';
+import {HeroDetailComponent} from './heroSample/hero-detail.component';
 
 export const appRoutes: Routes = [
-
-    { path: '', component: VotingItemComponent },
-    { path: 'voting-item', component: VotingItemComponent }
-
+    { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+    { path: 'heroes', component: HeroesComponent },
+    { path: 'dashboard', component: DashboardComponent },
+    { path: 'detail/:id', component: HeroDetailComponent },
 ];
 
 export const appRoutingProviders: any[] = [

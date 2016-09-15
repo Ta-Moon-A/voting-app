@@ -4,17 +4,17 @@ import {Router} from "@angular/router";
 @Component({
     selector: "header",
     template: `<div class="row">
-                     <div class="col s3">
-                        <div style="float : left">
-                        <a href="/" class="Link">
-                           
+                     <div class="col s3 generalTextStyle">
+                        <div style="float : left;">
+                        <a href="/" class="Link generalTextStyle">
+                           <h3>{{title}}</h3>
                         </a>
                      </div>
                      </div>
                      <div class="col s6"></div>
                      <div class="col s3">
                             <div class="float : right">
-                                <a class="waves-effect waves-light btn  teal lighten-3" style="width : 100%"  >
+                                <a class="waves-effect waves-light btn  teal" style="width : 100%"  >
                                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Log in
                                 </a>
                                 <br><br>
@@ -27,6 +27,7 @@ import {Router} from "@angular/router";
 })
 
 export class HeaderComponent {
+    title = 'EasyVote';
 
     constructor(private _router: Router) { }
 

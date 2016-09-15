@@ -12,11 +12,13 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
 var http_1 = require('@angular/http');
-var app_component_1 = require('./app.component');
 var app_routing_1 = require('./app.routing');
-var github_login_component_1 = require('./votingApp/github.login.component');
-var new_voting_item_1 = require('./votingApp/new.voting.item');
-var navigation_component_1 = require('./votingApp/navigation.component');
+var app_component_1 = require('./app.component');
+var hero_detail_component_1 = require('./heroSample/hero-detail.component');
+var heroes_component_1 = require('./heroSample/heroes.component');
+var dashboard_component_1 = require('./heroSample/dashboard.component');
+var footer_component_1 = require("./heroSample/footer.component");
+var header_component_1 = require("./heroSample/header.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -25,12 +27,15 @@ var AppModule = (function () {
             imports: [platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
                 http_1.HttpModule,
-                app_routing_1.routing],
+                app_routing_1.routing
+            ],
             declarations: [app_component_1.AppComponent,
-                new_voting_item_1.VotingItemComponent,
-                github_login_component_1.GithubLoginComponent,
-                navigation_component_1.NavigationComponent],
-            providers: [app_routing_1.appRoutingProviders],
+                hero_detail_component_1.HeroDetailComponent,
+                heroes_component_1.HeroesComponent,
+                dashboard_component_1.DashboardComponent,
+                footer_component_1.FooterComponent,
+                header_component_1.HeaderComponent],
+            providers: [],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

@@ -13,6 +13,7 @@ var router_1 = require("@angular/router");
 var HeaderComponent = (function () {
     function HeaderComponent(_router) {
         this._router = _router;
+        this.title = 'EasyVote';
     }
     HeaderComponent.prototype.onGithubAuth = function () {
         debugger;
@@ -22,7 +23,7 @@ var HeaderComponent = (function () {
     HeaderComponent = __decorate([
         core_1.Component({
             selector: "header",
-            template: "<div class=\"row\">\n                     <div class=\"col s3\">\n                        <div style=\"float : left\">\n                        <a href=\"/\" class=\"Link\">\n                           \n                        </a>\n                     </div>\n                     </div>\n                     <div class=\"col s6\"></div>\n                     <div class=\"col s3\">\n                            <div class=\"float : right\">\n                                <a class=\"waves-effect waves-light btn  teal lighten-3\" style=\"width : 100%\"  >\n                                       <i class=\"fa fa-github fa-2x\" aria-hidden=\"true\"></i>&nbsp;&nbsp;Log in\n                                </a>\n                                <br><br>\n                                <a class=\"waves-effect waves-light btn  light-blue darken-4\" style=\"width : 100%\">\n                                      <i class=\"fa fa-facebook fa-2x\" aria-hidden=\"true\"></i>&nbsp;&nbsp;Log in\n                                </a>\n                            </div>\n                     </div>\n                </div>"
+            template: "<div class=\"row\">\n                     <div class=\"col s3 generalTextStyle\">\n                        <div style=\"float : left;\">\n                        <a href=\"/\" class=\"Link generalTextStyle\">\n                           <h3>{{title}}</h3>\n                        </a>\n                     </div>\n                     </div>\n                     <div class=\"col s6\"></div>\n                     <div class=\"col s3\">\n                            <div class=\"float : right\">\n                                <a class=\"waves-effect waves-light btn  teal\" style=\"width : 100%\"  >\n                                       <i class=\"fa fa-github fa-2x\" aria-hidden=\"true\"></i>&nbsp;&nbsp;Log in\n                                </a>\n                                <br><br>\n                                <a class=\"waves-effect waves-light btn  light-blue darken-4\" style=\"width : 100%\">\n                                      <i class=\"fa fa-facebook fa-2x\" aria-hidden=\"true\"></i>&nbsp;&nbsp;Log in\n                                </a>\n                            </div>\n                     </div>\n                </div>"
         }), 
         __metadata('design:paramtypes', [router_1.Router])
     ], HeaderComponent);

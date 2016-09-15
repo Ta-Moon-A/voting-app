@@ -2,27 +2,33 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule}   from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
-import { AppComponent }  from './app.component';
 import { routing, appRoutingProviders }   from './app.routing';
 
+import { AppComponent }  from './app.component';
+import { HeroDetailComponent } from './heroSample/hero-detail.component';
+import {HeroesComponent} from './heroSample/heroes.component';
+import {DashboardComponent} from './heroSample/dashboard.component';
+import {FooterComponent} from "./heroSample/footer.component";
+import {HeaderComponent} from "./heroSample/header.component";
 
-import {GithubLoginComponent} from './votingApp/github.login.component';
-import {VotingItemComponent} from './votingApp/new.voting.item';
-import {NavigationComponent} from './votingApp/navigation.component';
 
 @NgModule({
     imports: [BrowserModule,
         FormsModule,
         HttpModule,
-        routing],
+        routing
+    ],
 
     declarations: [AppComponent,
-        VotingItemComponent,
-        GithubLoginComponent,
-        NavigationComponent],
+        HeroDetailComponent,
+        HeroesComponent,
+        DashboardComponent,
+        FooterComponent,
+        HeaderComponent],
 
-    providers: [appRoutingProviders],
+    providers: [
+        //appRoutingProviders
+    ],
     bootstrap: [AppComponent]
 })
 
