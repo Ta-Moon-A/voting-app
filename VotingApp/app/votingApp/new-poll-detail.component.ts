@@ -34,6 +34,11 @@ import { ActivatedRoute, Params } from '@angular/router';
                               <input id="icon_telephone" type="tel" class="validate">
                               <label for="icon_telephone">option 3</label>
                             </div>
+                            <div class="input-field col l3 m3 s3">
+                               <a class="btn-floating btn-medium waves-effect waves-light teal lighten-2">
+                                      <i class="material-icons">add</i>
+                               </a>
+                            </div>
                           </div>
                         <div class="row">
                           <div class="input-field col l10 m10 s10">
