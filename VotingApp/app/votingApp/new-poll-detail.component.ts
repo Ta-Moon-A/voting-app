@@ -1,7 +1,9 @@
 ﻿import { Component, Input, OnInit  } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 
-
+import {PollItem} from "./pollItem";
+import {ChartType} from "./pollItem";
+import {ChartColor} from "./pollItem";
 
 @Component({
     selector: 'new-poll-detail',
@@ -13,26 +15,15 @@ import { ActivatedRoute, Params } from '@angular/router';
 
                           <div class="row">
                             <div class="input-field col l10 m10 s10">
-                              <input id="poll_question" type="text" class="validate">
+                              <input id="poll_question" type="text" class="validate" [(ngModel)]="model.questionText" required>
                               <label for="poll_question">Question text</label>
                             </div>
                           </div>
-                          <div class="row">
+                          
+                         <div class="row" *ngFor="let op in model.options">
                             <div class="input-field col l6 m6 s6">
                               <input id="icon_telephone" type="tel" class="validate">
-                              <label for="icon_telephone">option 1</label>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="input-field col l6 m6 s6">
-                              <input id="icon_telephone" type="tel" class="validate">
-                              <label for="icon_telephone">option 2</label>
-                            </div>
-                          </div>
-                         <div class="row">
-                            <div class="input-field col l6 m6 s6">
-                              <input id="icon_telephone" type="tel" class="validate">
-                              <label for="icon_telephone">option 3</label>
+                              <label for="icon_telephone">op</label>
                             </div>
                             <div class="input-field col l3 m3 s3">
                                <a class="btn-floating btn-medium waves-effect waves-light teal lighten-2">
@@ -90,7 +81,11 @@ import { ActivatedRoute, Params } from '@angular/router';
 })
 export class NewPollDetailComponent implements OnInit {
 
-    constructor() { }
+    model = new PollItem("სატესტო კითხვა", ChartType.bar, ChartColor.cherry, ["", ""]);
+
+    submitted = false;
+
+    onSubmit() { this.submitted = true; }
 
     ngOnInit() {
         setTimeout(() => {

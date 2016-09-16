@@ -115,6 +115,7 @@
     <TypeScriptCompile Include="app\heroSample\mock-heroes.ts" />
     <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="app\votingApp\new-poll-detail.component.ts" />
+    <TypeScriptCompile Include="app\votingApp\pollItem.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
