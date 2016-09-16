@@ -14,7 +14,7 @@ import {Router} from "@angular/router";
                      <div class="col s6"></div>
                      <div class="col s3">
                             <div class="float : right">
-                                <a class="waves-effect waves-light btn  teal" style="width : 100%"  >
+                                <a class="waves-effect waves-light btn  teal lighten-2" style="width : 100%"  >
                                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Log in
                                 </a>
                                 <br><br>

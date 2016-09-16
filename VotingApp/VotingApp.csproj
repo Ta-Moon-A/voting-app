@@ -100,22 +100,21 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="app\votingApp\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\app.routing.ts" />
-    <TypeScriptCompile Include="app\heroSample\footer.component.ts" />
+    <TypeScriptCompile Include="app\votingApp\my-footer.component.ts" />
     <TypeScriptCompile Include="app\heroSample\dashboard.component.ts" />
-    <TypeScriptCompile Include="app\heroSample\header.component.ts" />
+    <TypeScriptCompile Include="app\votingApp\header.component.ts" />
     <TypeScriptCompile Include="app\heroSample\hero-detail.component.ts" />
     <TypeScriptCompile Include="app\heroSample\hero.service.ts" />
     <TypeScriptCompile Include="app\heroSample\heroes.component.ts" />
     <TypeScriptCompile Include="app\heroSample\heroItem.ts" />
     <TypeScriptCompile Include="app\heroSample\mock-heroes.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\votingApp\new-poll-detail.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -136,7 +135,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>5240</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:5260/</IISUrl>
+          <IISUrl>http://localhost:5300/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -14,19 +14,18 @@ var AppComponent = (function () {
     }
     AppComponent.prototype.ngOnInit = function () {
         setTimeout(function () {
-            // $(".button-collapse").sideNav();
-        }, 0);
+            //debugger;
+            //$(".button-collapse").sideNav();
+        }, 1000);
     };
     AppComponent = __decorate([
         core_1.Component({
             selector: "voting-app",
-            template: " <div class=\"container mainBoard\">\n                    <header></header>\n                    <nav class=\"teal\">\n                        <div class=\"nav-wrapper\">\n                          <a href=\"#\" data-activates=\"mobile-demo\" class=\"button-collapse\"><i class=\"material-icons\"></i></a>\n\n\n                          <ul id=\"nav-mobile\" class=\"left hide-on-med-and-down\">\n                            <li class=\"active\"><a routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a></li>\n                            <li><a routerLink=\"/heroes\" routerLinkActive=\"active\">Heroes</a></li>\n                            \n                            <li><a routerLink=\"/\" routerLinkActive=\"active\">All Poll</a></li>\n                            <li><a routerLink=\"/\" routerLinkActive=\"active\">My Poll</a></li>\n                            <li><a routerLink=\"/\" routerLinkActive=\"active\">New Poll</a></li>\n                          </ul>\n                          \n                          <ul class=\"side-nav\" id=\"mobile-demo\">\n                            <li><a routerLink=\"/\" routerLinkActive=\"active\">All Poll</a></li>\n                            <li><a routerLink=\"/\" routerLinkActive=\"active\">My Poll</a></li>\n                            <li><a routerLink=\"/\" routerLinkActive=\"active\">New Poll</a></li>\n                          </ul>\n\n                        </div>\n                      </nav>\n                    <router-outlet></router-outlet>\n                    <footer class=\"center-align footer\"></footer>\n                <div>",
+            template: " <div class=\"container mainBoard\">\n                    <header></header>\n                    <nav class=\"teal lighten-2\">\n                        <div class=\"nav-wrapper\">\n                          \n                          <ul id=\"nav-mobile\" class=\"left\">\n                            <li><a routerLink=\"/\" routerLinkActive=\"active\">Home</a></li>\n                            <li><a routerLink=\"/\" routerLinkActive=\"active\">My Polls</a></li>\n                            <li><a routerLink=\"/new-poll\" routerLinkActive=\"active\">New Poll</a></li>\n                          </ul>\n                          \n                        </div>\n                      </nav>\n                    <router-outlet></router-outlet>\n                    <my-footer ></my-footer>\n                <div>"
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
-/*
-*/ 
 //# sourceMappingURL=app.component.js.map

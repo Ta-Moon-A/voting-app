@@ -4,51 +4,28 @@
     selector: "voting-app",
     template: ` <div class="container mainBoard">
                     <header></header>
-                    <nav class="teal">
+                    <nav class="teal lighten-2">
                         <div class="nav-wrapper">
-                          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"></i></a>
-
-
-                          <ul id="nav-mobile" class="left hide-on-med-and-down">
-                            <li class="active"><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
-                            <li><a routerLink="/heroes" routerLinkActive="active">Heroes</a></li>
-                            
-                            <li><a routerLink="/" routerLinkActive="active">All Poll</a></li>
-                            <li><a routerLink="/" routerLinkActive="active">My Poll</a></li>
-                            <li><a routerLink="/" routerLinkActive="active">New Poll</a></li>
+                          
+                          <ul id="nav-mobile" class="left">
+                            <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+                            <li><a routerLink="/" routerLinkActive="active">My Polls</a></li>
+                            <li><a routerLink="/new-poll" routerLinkActive="active">New Poll</a></li>
                           </ul>
                           
-                          <ul class="side-nav" id="mobile-demo">
-                            <li><a routerLink="/" routerLinkActive="active">All Poll</a></li>
-                            <li><a routerLink="/" routerLinkActive="active">My Poll</a></li>
-                            <li><a routerLink="/" routerLinkActive="active">New Poll</a></li>
-                          </ul>
-
                         </div>
                       </nav>
                     <router-outlet></router-outlet>
-                    <footer class="center-align footer"></footer>
-                <div>`,
-    //styleUrls: ['../content/styles/app1.component.css']
+                    <my-footer ></my-footer>
+                <div>`
 })
 
 export class AppComponent implements OnInit {
 
     ngOnInit() {
         setTimeout(() => {
-            // $(".button-collapse").sideNav();
-        }, 0);
+            //debugger;
+            //$(".button-collapse").sideNav();
+        }, 1000);
     }
-
-    //public ngAfterViewChecked(): void {
-    //$(document).ready(function () {
-
-    //    console.log("jQuery is ready");
-    //    $(".button-collapse").sideNav();
-    //});
-    //}
-
 }
-
-/*
-*/
