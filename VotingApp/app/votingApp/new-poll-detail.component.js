@@ -10,11 +10,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var pollItem_1 = require("./pollItem");
-var pollItem_2 = require("./pollItem");
-var pollItem_3 = require("./pollItem");
+var chartType_1 = require("./chartType");
+var chartColor_1 = require("./chartColor");
 var NewPollDetailComponent = (function () {
     function NewPollDetailComponent() {
-        this.model = new pollItem_1.PollItem("სატესტო კითხვა", pollItem_2.ChartType.bar, pollItem_3.ChartColor.cherry, ["", ""]);
+        this.chartColors = chartColor_1.ChartColors;
+        this.chartTypes = chartType_1.ChartTypes;
+        this.model = new pollItem_1.PollItem("სატესტო კითხვა", 0, 0, [{ id: 1, name: "option 1" }, { id: 2, name: "option 2" }]);
         this.submitted = false;
     }
     NewPollDetailComponent.prototype.onSubmit = function () { this.submitted = true; };
@@ -27,7 +29,7 @@ var NewPollDetailComponent = (function () {
     NewPollDetailComponent = __decorate([
         core_1.Component({
             selector: 'new-poll-detail',
-            template: "\n              <div class=\"row\">\n                    <div class=\"row\"></div>\n                    <form class=\"col l6 m6 s6\">\n                          \n\n                          <div class=\"row\">\n                            <div class=\"input-field col l10 m10 s10\">\n                              <input id=\"poll_question\" type=\"text\" class=\"validate\" [(ngModel)]=\"model.questionText\" required>\n                              <label for=\"poll_question\">Question text</label>\n                            </div>\n                          </div>\n                          \n                         <div class=\"row\" *ngFor=\"let op in model.options\">\n                            <div class=\"input-field col l6 m6 s6\">\n                              <input id=\"icon_telephone\" type=\"tel\" class=\"validate\">\n                              <label for=\"icon_telephone\">op</label>\n                            </div>\n                            <div class=\"input-field col l3 m3 s3\">\n                               <a class=\"btn-floating btn-medium waves-effect waves-light teal lighten-2\">\n                                      <i class=\"material-icons\">add</i>\n                               </a>\n                            </div>\n                          </div>\n                        <div class=\"row\">\n                          <div class=\"input-field col l10 m10 s10\">\n                                <select>\n                                  <option value=\"\" disabled selected>Choose chart type</option>\n                                  <option value=\"1\">Pie Chart</option>\n                                  <option value=\"2\">Doughnut Chart</option>\n                                  <option value=\"3\">Line Chart</option>\n                                  <option value=\"4\">Bar Chart</option>\n                                </select>\n                               \n                              </div>\n                          </div>\n                        \n                       <div class=\"row\">\n                          <div class=\"input-field col l10 m10 s10\">\n                                <select>\n                                  <option value=\"\" disabled selected>Choose chart color</option>\n                                  <option value=\"1\">Sunset</option>\n                                  <option value=\"2\">Night</option>\n                                  <option value=\"3\">Cherry</option>\n                                  <option value=\"4\">Sandy</option>\n                                </select>\n                              </div>\n                          </div>\n                         <div class=\"row\">\n                             <div class=\"col l2 m2 s2\">\n                                 <button class=\"btn waves-effect waves-light\" type=\"submit\" name=\"action\">Create </button>\n                             </div>\n                         </div>\n                    </form>\n\n                    <div  class=\"col l6 m6 s6\">\n                        <div class=\"row\">\n                            <div class=\"col s12 m12 l12\">\n                            <div class=\"card-panel teal lighten-2\">\n                                <span class=\"white-text\">I am a very simple card. I am good at containing small bits of information.\n                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n                                </span>\n                            </div>\n                            </div>\n                        </div>\n                    </div>\n\n              </div>\n\n              "
+            templateUrl: '../content/templates/new-poll-template.html'
         }), 
         __metadata('design:paramtypes', [])
     ], NewPollDetailComponent);

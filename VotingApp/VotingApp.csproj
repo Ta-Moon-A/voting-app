@@ -68,6 +68,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="content\templates\new-poll-template.html" />
     <Content Include="content\styles\app1.component.css" />
     <Content Include="content\styles\dashboard.component.css" />
     <Content Include="content\styles\hero-detail.component.css" />
@@ -105,6 +106,8 @@
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\app.routing.ts" />
+    <TypeScriptCompile Include="app\votingApp\chartColor.ts" />
+    <TypeScriptCompile Include="app\votingApp\chartType.ts" />
     <TypeScriptCompile Include="app\votingApp\my-footer.component.ts" />
     <TypeScriptCompile Include="app\heroSample\dashboard.component.ts" />
     <TypeScriptCompile Include="app\votingApp\header.component.ts" />
