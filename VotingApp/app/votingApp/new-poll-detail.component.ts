@@ -19,17 +19,32 @@ export class NewPollDetailComponent implements OnInit {
 
 
 
-    model = new PollItem("სატესტო კითხვა", 0, 0, [{ id: 1, name: "option 1" }, { id: 2, name: "option 2" }]);
+    model = new PollItem("",
+        { id: 0, name: "" },
+        { id: 0, name: "" },
+        [{ id: 1, name: "" }, { id: 2, name: "" }]
+    );
 
     submitted = false;
 
-    onSubmit() { this.submitted = true; }
+    onSubmit() {
+        this.submitted = true
+        console.log("model : ");
+        console.log(this.model);
+    }
 
     ngOnInit() {
         setTimeout(() => {
             //debugger;
             $('select').material_select();
         }, 0);
+    }
+
+    onOptionAdd() {
+        this.model.options.push({
+            id: this.model.options.length + 1,
+            name: ""
+        });
     }
 }
 

@@ -16,15 +16,25 @@ var NewPollDetailComponent = (function () {
     function NewPollDetailComponent() {
         this.chartColors = chartColor_1.ChartColors;
         this.chartTypes = chartType_1.ChartTypes;
-        this.model = new pollItem_1.PollItem("სატესტო კითხვა", 0, 0, [{ id: 1, name: "option 1" }, { id: 2, name: "option 2" }]);
+        this.model = new pollItem_1.PollItem("", { id: 0, name: "" }, { id: 0, name: "" }, [{ id: 1, name: "" }, { id: 2, name: "" }]);
         this.submitted = false;
     }
-    NewPollDetailComponent.prototype.onSubmit = function () { this.submitted = true; };
+    NewPollDetailComponent.prototype.onSubmit = function () {
+        this.submitted = true;
+        console.log("model : ");
+        console.log(this.model);
+    };
     NewPollDetailComponent.prototype.ngOnInit = function () {
         setTimeout(function () {
             //debugger;
             $('select').material_select();
         }, 0);
+    };
+    NewPollDetailComponent.prototype.onOptionAdd = function () {
+        this.model.options.push({
+            id: this.model.options.length + 1,
+            name: ""
+        });
     };
     NewPollDetailComponent = __decorate([
         core_1.Component({

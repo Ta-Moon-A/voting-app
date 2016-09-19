@@ -3,6 +3,7 @@
 @Component({
     selector: "voting-app",
     template: ` <div class="container mainBoard">
+                    
                     <header></header>
                     <nav class="teal lighten-2">
                         <div class="nav-wrapper">
@@ -16,8 +17,9 @@
                         </div>
                       </nav>
                     <router-outlet></router-outlet>
-                    <my-footer ></my-footer>
-                <div>`
+                   
+                    <my-footer></my-footer>
+                </div>`
 })
 
 export class AppComponent implements OnInit {

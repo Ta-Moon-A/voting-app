@@ -4,18 +4,18 @@
         <div class="row">
             <div class="input-field col l10 m10 s10">
                 <input id="question_txt" name="question_txt" type="text" [(ngModel)]="model.questionText">
-                <label>Question text</label>
+                <label>Enter question</label>
             </div>
         </div>
         <div class="row">
             <ul>
-                <li class="input-field col l6 m6 s6" *ngFor="let op of model.options;">
+                <li class="input-field col l8 m8 s8" *ngFor="let op of model.options;">
                     <input id="option{{op.id}}" name="option{{op.id}}" type="text" [(ngModel)]="op.name">
-                    <label>option</label><br /><br />
+                    <label>Enter option {{op.id}}</label><br /><br />
                 </li>
             </ul>
             <div class="input-field col l3 m3 s3">
-                <a class="btn-floating btn-medium waves-effect waves-light teal lighten-2">
+                <a class="btn-floating btn-medium waves-effect waves-light teal lighten-2" (click)="onOptionAdd()">
                     <i class="material-icons">add</i>
                 </a>
             </div>
@@ -32,13 +32,13 @@
             <div class="input-field col l10 m10 s10">
                 <select id="chartColor" name="chartColor" [(ngModel)]="model.chartColor">
                     <option value="" disabled selected>Choose chart color</option>
-                    <option *ngFor="let color of chartColors" [value]="color.id">{{color.name}}</option>
+                    <option *ngFor="let color of chartColors" [value]="color">{{color.name}}</option>
                 </select>
             </div>
         </div>
         <div class="row">
             <div class="col l2 m2 s2">
-                <button class="btn waves-effect waves-light" type="submit" name="action">Create </button>
+                <button class="btn waves-effect waves-light" type="submit" name="action" (click)="onSubmit()">Create </button>
             </div>
         </div>
     </form>
