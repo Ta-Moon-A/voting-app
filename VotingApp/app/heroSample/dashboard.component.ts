@@ -9,9 +9,9 @@ import { HeroService } from './hero.service';
     template: ` <h3>Top Heroes</h3>
                 <div *ngFor="let hero of heroes" (click)="gotoDetail(hero)" class="col-l3">
                     <div class="module hero">
-                      <h4>{{hero.name}}</h4>
+                       <h4>{{hero.name}}</h4>
                     </div>
-                 </div>`,
+                </div>`,
     styleUrls: ['../content/styles/dashboard.component.css'],
     providers: [HeroService]
 })
@@ -19,10 +19,7 @@ export class DashboardComponent implements OnInit {
 
     public heroes: HeroItem[] = [];
 
-    constructor(
-        private router: Router,
-        private heroService: HeroService) {
-    }
+    constructor( private router: Router, private heroService: HeroService) {}
 
     ngOnInit(): void {
         debugger;

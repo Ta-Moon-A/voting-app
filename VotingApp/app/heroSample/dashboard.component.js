@@ -32,7 +32,7 @@ var DashboardComponent = (function () {
     DashboardComponent = __decorate([
         core_1.Component({
             selector: 'my-dashboard',
-            template: " <h3>Top Heroes</h3>\n                <div *ngFor=\"let hero of heroes\" (click)=\"gotoDetail(hero)\" class=\"col-l3\">\n                    <div class=\"module hero\">\n                      <h4>{{hero.name}}</h4>\n                    </div>\n                 </div>",
+            template: " <h3>Top Heroes</h3>\n                <div *ngFor=\"let hero of heroes\" (click)=\"gotoDetail(hero)\" class=\"col-l3\">\n                    <div class=\"module hero\">\n                       <h4>{{hero.name}}</h4>\n                    </div>\n                </div>",
             styleUrls: ['../content/styles/dashboard.component.css'],
             providers: [hero_service_1.HeroService]
         }), 
