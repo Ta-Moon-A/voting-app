@@ -108,7 +108,8 @@
     <TypeScriptCompile Include="app\app.routing.ts" />
     <TypeScriptCompile Include="app\votingApp\chartColor.ts" />
     <TypeScriptCompile Include="app\votingApp\chartType.ts" />
-    <TypeScriptCompile Include="app\votingApp\my-footer.component.ts" />
+    <TypeScriptCompile Include="app\votingApp\main.component.ts" />
+    <TypeScriptCompile Include="app\votingApp\footer.component.ts" />
     <TypeScriptCompile Include="app\heroSample\dashboard.component.ts" />
     <TypeScriptCompile Include="app\votingApp\header.component.ts" />
     <TypeScriptCompile Include="app\heroSample\hero-detail.component.ts" />
@@ -139,7 +140,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>5240</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:5300/</IISUrl>
+          <IISUrl>http://localhost:5301/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

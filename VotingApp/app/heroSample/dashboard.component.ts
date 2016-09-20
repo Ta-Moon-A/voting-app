@@ -12,14 +12,14 @@ import { HeroService } from './hero.service';
                        <h4>{{hero.name}}</h4>
                     </div>
                 </div>`,
-    styleUrls: ['../content/styles/dashboard.component.css'],
+    //styleUrls: ['../content/styles/dashboard.component.css'],
     providers: [HeroService]
 })
 export class DashboardComponent implements OnInit {
 
     public heroes: HeroItem[] = [];
 
-    constructor( private router: Router, private heroService: HeroService) {}
+    constructor(private router: Router, private heroService: HeroService) { }
 
     ngOnInit(): void {
         debugger;

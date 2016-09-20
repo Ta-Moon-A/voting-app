@@ -5,8 +5,8 @@ export class PollItem {
 
     constructor(
         public questionText: string,
-        public chartType: ChartType,
-        public chartColor: ChartColor,
+        public chartType: string,
+        public chartColor: string,
         public options: Array<{ id: number, name: string }>
     ) { }
 

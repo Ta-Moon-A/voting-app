@@ -2,8 +2,9 @@
 import {Router} from "@angular/router";
 
 @Component({
-    selector: "header",
-    template: `<div class="row">
+    selector: "my-header",
+    template: `<header>
+               <div class="row">
                      <div class="col s3 generalTextStyle">
                         <div style="float : left;">
                         <a href="/" class="Link generalTextStyle">
@@ -23,7 +24,8 @@ import {Router} from "@angular/router";
                                 </a>
                             </div>
                      </div>
-                </div>`
+                </div>
+            </header>`
 })
 
 export class HeaderComponent {

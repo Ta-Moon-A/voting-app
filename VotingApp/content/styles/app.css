@@ -1,6 +1,11 @@
 ﻿body {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+:host main {
+    flex: 1 0 auto;
 }
 
 .mainBoard {
@@ -9,14 +14,6 @@
 
 .generalTextStyle {
     color: #009688;
-}
-
-.footer {
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    right: 0;
-    background-color: white;
 }
 
 .footerIcon {

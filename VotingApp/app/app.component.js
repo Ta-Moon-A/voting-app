@@ -21,7 +21,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "voting-app",
-            template: "\n                <div class=\"container mainBoard\">\n                   <header></header>\n                   <nav class=\"teal lighten-2\">\n                      <div class=\"nav-wrapper\">\n                         <ul id=\"nav-mobile\" class=\"left\">\n                            <li><a routerLink=\"/\" routerLinkActive=\"active\">Home</a></li>\n                            <li><a routerLink=\"/\" routerLinkActive=\"active\">My Polls</a></li>\n                            <li><a routerLink=\"/new-poll\" routerLinkActive=\"active\">New Poll</a></li>\n                         </ul>\n                      </div>\n                   </nav>\n                   <router-outlet></router-outlet>\n                   <my-footer></my-footer>\n                </div>"
+            template: "<div class=\"container mainBoard\">\n                   <my-header></my-header>\n                   <my-main></my-main>\n                   <my-footer></my-footer>\n               </div>"
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

@@ -14,14 +14,16 @@ import {ChartColors} from "./chartColor";
 })
 export class NewPollDetailComponent implements OnInit {
 
-    chartColors: ChartColor[] = ChartColors;
-    chartTypes: ChartType[] = ChartTypes;
+    defaultType = 'Select chart type';
+    defaultColor = 'Select chart color';
+    chartColors: string[] = ChartColors;
+    chartTypes: string[] = ChartTypes;
 
 
 
     model = new PollItem("",
-        { id: 0, name: "" },
-        { id: 0, name: "" },
+        "",
+        "",
         [{ id: 1, name: "" }, { id: 2, name: "" }]
     );
 

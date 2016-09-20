@@ -17,9 +17,10 @@ var app_component_1 = require('./app.component');
 var hero_detail_component_1 = require('./heroSample/hero-detail.component');
 var heroes_component_1 = require('./heroSample/heroes.component');
 var dashboard_component_1 = require('./heroSample/dashboard.component');
-var my_footer_component_1 = require("./votingApp/my-footer.component");
+var footer_component_1 = require("./votingApp/footer.component");
 var header_component_1 = require("./votingApp/header.component");
 var new_poll_detail_component_1 = require("./votingApp/new-poll-detail.component");
+var main_component_1 = require("./votingApp/main.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -34,9 +35,10 @@ var AppModule = (function () {
                 hero_detail_component_1.HeroDetailComponent,
                 heroes_component_1.HeroesComponent,
                 dashboard_component_1.DashboardComponent,
-                my_footer_component_1.FooterComponent,
+                footer_component_1.FooterComponent,
                 header_component_1.HeaderComponent,
-                new_poll_detail_component_1.NewPollDetailComponent],
+                new_poll_detail_component_1.NewPollDetailComponent,
+                main_component_1.MyMainComponent],
             providers: [],
             bootstrap: [app_component_1.AppComponent]
         }), 

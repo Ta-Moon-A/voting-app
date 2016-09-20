@@ -3,7 +3,7 @@
 
 @Component({
     selector: "my-footer",
-    template: ` <footer class="page-footer teal lighten-2">
+    template: `<footer class="page-footer teal lighten-2">
                       <div class="container">
                         <div class="row center-align">
                           <a href="https://github.com/nagasaki1991/VotingApp" target="_blank" class="footerIcon">
@@ -19,6 +19,4 @@
 export class FooterComponent {
 
 }
-
-
 
