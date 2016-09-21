@@ -14,17 +14,13 @@ var chartType_1 = require("./chartType");
 var chartColor_1 = require("./chartColor");
 var NewPollDetailComponent = (function () {
     function NewPollDetailComponent() {
-        this.defaultType = 'Select chart type';
-        this.defaultColor = 'Select chart color';
         this.chartColors = chartColor_1.ChartColors;
         this.chartTypes = chartType_1.ChartTypes;
-        this.model = new pollItem_1.PollItem("", "", "", [{ id: 1, name: "" }, { id: 2, name: "" }]);
+        this.model = new pollItem_1.PollItem("", this.chartTypes[0], this.chartColors[0], [{ id: 1, name: "" }, { id: 2, name: "" }]);
         this.submitted = false;
     }
     NewPollDetailComponent.prototype.onSubmit = function () {
         this.submitted = true;
-        console.log("model : ");
-        console.log(this.model);
     };
     NewPollDetailComponent.prototype.ngOnInit = function () {
         setTimeout(function () {

@@ -16,6 +16,10 @@
     color: #009688;
 }
 
+.validationText {
+    color: red;
+}
+
 .footerIcon {
     color: white;
     text-decoration: none;

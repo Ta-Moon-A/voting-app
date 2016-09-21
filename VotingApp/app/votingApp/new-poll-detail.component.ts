@@ -14,16 +14,12 @@ import {ChartColors} from "./chartColor";
 })
 export class NewPollDetailComponent implements OnInit {
 
-    defaultType = 'Select chart type';
-    defaultColor = 'Select chart color';
-    chartColors: string[] = ChartColors;
-    chartTypes: string[] = ChartTypes;
-
-
+    chartColors = ChartColors;
+    chartTypes = ChartTypes;
 
     model = new PollItem("",
-        "",
-        "",
+        this.chartTypes[0],
+        this.chartColors[0],
         [{ id: 1, name: "" }, { id: 2, name: "" }]
     );
 
@@ -31,8 +27,6 @@ export class NewPollDetailComponent implements OnInit {
 
     onSubmit() {
         this.submitted = true
-        console.log("model : ");
-        console.log(this.model);
     }
 
     ngOnInit() {
@@ -48,5 +42,7 @@ export class NewPollDetailComponent implements OnInit {
             name: ""
         });
     }
+
+
 }
 
