@@ -1,38 +1,15 @@
 ﻿body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+    width: 80%;
+    margin: auto !important;
 }
 
-:host main {
-    flex: 1 0 auto;
-}
-
-.mainBoard {
-    padding: 10px;
-}
-
-.generalTextStyle {
+.generalColor {
     color: #009688;
 }
 
-.validationText {
+.validationColor {
     color: red;
 }
-
-.footerIcon {
-    color: white;
-    text-decoration: none;
-}
-
-    .footerIcon:hover {
-        color: black;
-        text-decoration: none;
-    }
-
-    .footerIcon:after {
-        text-decoration: none;
-    }
 
 .loading {
     color: #ffffff;

@@ -2,7 +2,7 @@
 
 @Component({
     selector: "my-main",
-    template: `<main>
+    template: `<main id="wrap">
                    <nav class="teal lighten-2">
                       <div class="nav-wrapper">
                          <ul id="nav-mobile" class="left">
@@ -13,7 +13,8 @@
                       </div>
                    </nav>
                    <router-outlet></router-outlet>
-              </main>`
+              </main>`,
+    styleUrls: ['../content/styles/main.comp.css'],
 })
 
 export class MyMainComponent {

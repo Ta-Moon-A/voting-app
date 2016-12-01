@@ -2,19 +2,12 @@
 
 @Component({
     selector: "voting-app",
-    template: `<div class="container mainBoard">
-                   <my-header></my-header>
-                   <my-main></my-main>
-                   <my-footer></my-footer>
-               </div>`
+    template: `<my-header></my-header>
+               <my-main></my-main>
+               <my-footer></my-footer>`,
+    styleUrls: ['../content/styles/app.css'],
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent {
 
-    ngOnInit() {
-        setTimeout(() => {
-            //debugger;
-            //$(".button-collapse").sideNav();
-        }, 1000);
-    }
 }

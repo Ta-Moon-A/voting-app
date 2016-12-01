@@ -1,0 +1,18 @@
+﻿#footer {
+    height: 80px;
+}
+
+
+.footerIcon {
+    color: white;
+    text-decoration: none;
+}
+
+    .footerIcon:hover {
+        color: black;
+        text-decoration: none;
+    }
+
+    .footerIcon:after {
+        text-decoration: none;
+    }

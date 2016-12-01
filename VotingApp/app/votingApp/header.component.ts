@@ -4,10 +4,10 @@ import {Router} from "@angular/router";
 @Component({
     selector: "my-header",
     template: `<header>
-               <div class="row">
-                     <div class="col s3 generalTextStyle">
+               <div class="row" id="header">
+                     <div class="col s3 generalColor">
                         <div style="float : left;">
-                        <a href="/" class="Link generalTextStyle">
+                        <a href="/" class="Link generalColor">
                            <h3>{{title}}</h3>
                         </a>
                      </div>
@@ -25,7 +25,8 @@ import {Router} from "@angular/router";
                             </div>
                      </div>
                 </div>
-            </header>`
+            </header>`,
+    styleUrls: ['../content/styles/header.comp.css'],
 })
 
 export class HeaderComponent {
@@ -40,3 +41,35 @@ export class HeaderComponent {
     }
 }
 
+/*
+
+
+
+
+
+
+
+<header>
+               <div class="row">
+                     <div class="col s3 generalColor">
+                        <div style="float : left;">
+                        <a href="/" class="Link generalColor">
+                           <h3>{{title}}</h3>
+                        </a>
+                     </div>
+                     </div>
+                     <div class="col s6"></div>
+                     <div class="col s3">
+                            <div class="float : right">
+                                <a class="waves-effect waves-light btn  teal lighten-2" style="width : 100%"  >
+                                       <i class="fa fa-github fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Log in
+                                </a>
+                                <br><br>
+                                <a class="waves-effect waves-light btn  light-blue darken-4" style="width : 100%">
+                                      <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Log in
+                                </a>
+                            </div>
+                     </div>
+                </div>
+            </header>
+*/

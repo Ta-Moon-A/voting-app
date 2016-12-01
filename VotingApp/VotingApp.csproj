@@ -68,17 +68,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="content\styles\footer.comp.css" />
+    <Content Include="content\styles\header.comp.css" />
+    <Content Include="content\styles\main.comp.css" />
     <Content Include="content\templates\new-poll-template.html" />
-    <Content Include="content\styles\app1.component.css" />
-    <Content Include="content\styles\dashboard.component.css" />
-    <Content Include="content\styles\hero-detail.component.css" />
-    <Content Include="content\styles\heroes.component.css" />
     <Content Include="content\images\bodyback.png" />
     <Content Include="content\images\logo1.png" />
     <Content Include="content\images\logo2.jpg" />
     <Content Include="content\images\logo3.png" />
     <Content Include="content\styles\app.css" />
-    <Content Include="content\styles\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="index.html" />
     <Content Include="node_modules\ng2-charts\.config\bundle-system.js" />

@@ -9,7 +9,7 @@
                 <label>Enter question</label>
             </div>
             <div *ngIf="!(quest.valid || quest.pristine)" class="col l2 m2 s2 valign-wrapper">
-                <span class="valign validationText">*</span>
+                <span class="valign validationColor">*</span>
             </div>
         </div>
         <div class="row">
@@ -20,7 +20,7 @@
                         <label>Enter option {{op.id}}</label><br /><br />
                     </div>
                     <div *ngIf="!(opt.valid || opt.pristine)" class="col l2 m2 s2">
-                        <span class="validationText">*</span>
+                        <span class="validationColor">*</span>
                     </div>
                 </li>
             </ul>
@@ -38,7 +38,7 @@
                 </select>
             </div>
             <div *ngIf="!(type.valid || type.pristine)" class="col l2 m2 s2 valign-wrapper">
-                <span class="valign validationText">*</span>
+                <span class="valign validationColor">*</span>
             </div>
         </div>
         <div class="row">
@@ -49,7 +49,7 @@
                 </select>
             </div>
             <div *ngIf="!(color.valid || color.pristine)" class="col l2 m2 s2 valign-wrapper">
-                <span class="valign validationText">*</span>
+                <span class="valign validationColor">*</span>
             </div>
         </div>
         <div class="row">
