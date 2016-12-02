@@ -5,13 +5,11 @@ import { HttpModule } from '@angular/http';
 import { routing, appRoutingProviders }   from './app.routing';
 
 import { AppComponent }  from './app.component';
-import { HeroDetailComponent } from './heroSample/hero-detail.component';
-import {HeroesComponent} from './heroSample/heroes.component';
-import {DashboardComponent} from './heroSample/dashboard.component';
-import {FooterComponent} from "./votingApp/footer.component";
-import {HeaderComponent} from "./votingApp/header.component";
-import {NewPollDetailComponent} from "./votingApp/new-poll-detail.component";
-import {MyMainComponent} from "./votingApp/main.component";
+import {FooterComponent} from "./votingApp/components/footer.component";
+import {HeaderComponent} from "./votingApp/components/header.component";
+import {NewPollDetailComponent} from "./votingApp/components/poll.item.component";
+import {MainComponent} from './votingApp/components/main.component';
+import {HomeComponent} from './votingApp/components/home.component';
 
 
 @NgModule({
@@ -22,13 +20,11 @@ import {MyMainComponent} from "./votingApp/main.component";
     ],
 
     declarations: [AppComponent,
-        HeroDetailComponent,
-        HeroesComponent,
-        DashboardComponent,
         FooterComponent,
         HeaderComponent,
         NewPollDetailComponent,
-        MyMainComponent],
+        MainComponent,
+        HomeComponent],
 
     providers: [
         //appRoutingProviders

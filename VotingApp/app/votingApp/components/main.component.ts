@@ -17,6 +17,6 @@
     styleUrls: ['../content/styles/main.comp.css'],
 })
 
-export class MyMainComponent {
+export class MainComponent {
 
 }

@@ -8,18 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var FooterComponent = (function () {
-    function FooterComponent() {
+var core_1 = require('@angular/core');
+var HomeComponent = (function () {
+    function HomeComponent() {
     }
-    FooterComponent = __decorate([
+    HomeComponent = __decorate([
         core_1.Component({
-            selector: "footer",
-            template: "<a href=\"https://github.com/nagasaki1991/VotingApp\" target=\"_blank\" class=\"footerIcon\"> \n                   <i class=\"fa fa-github fa-2x\" aria-hidden=\"true\"></i>\n               </a>\n                   <br>\n               <span>\u00A9 2015 Copyright.</span>"
+            selector: 'home',
+            template: '<p>Home Component Home Component Home ComponentHome Component Home Component Home Component</p>'
         }), 
         __metadata('design:paramtypes', [])
-    ], FooterComponent);
-    return FooterComponent;
+    ], HomeComponent);
+    return HomeComponent;
 }());
-exports.FooterComponent = FooterComponent;
-//# sourceMappingURL=footer.component.js.map
+exports.HomeComponent = HomeComponent;
+//# sourceMappingURL=home.component.js.map

@@ -71,7 +71,7 @@
     <Content Include="content\styles\footer.comp.css" />
     <Content Include="content\styles\header.comp.css" />
     <Content Include="content\styles\main.comp.css" />
-    <Content Include="content\templates\new-poll-template.html" />
+    <Content Include="content\templates\poll.item.template.html" />
     <Content Include="content\images\bodyback.png" />
     <Content Include="content\images\logo1.png" />
     <Content Include="content\images\logo2.jpg" />
@@ -260,20 +260,15 @@
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\app.routing.ts" />
-    <TypeScriptCompile Include="app\votingApp\chartColor.ts" />
-    <TypeScriptCompile Include="app\votingApp\chartType.ts" />
-    <TypeScriptCompile Include="app\votingApp\main.component.ts" />
-    <TypeScriptCompile Include="app\votingApp\footer.component.ts" />
-    <TypeScriptCompile Include="app\heroSample\dashboard.component.ts" />
-    <TypeScriptCompile Include="app\votingApp\header.component.ts" />
-    <TypeScriptCompile Include="app\heroSample\hero-detail.component.ts" />
-    <TypeScriptCompile Include="app\heroSample\hero.service.ts" />
-    <TypeScriptCompile Include="app\heroSample\heroes.component.ts" />
-    <TypeScriptCompile Include="app\heroSample\heroItem.ts" />
-    <TypeScriptCompile Include="app\heroSample\mock-heroes.ts" />
+    <TypeScriptCompile Include="app\votingApp\classes\chartColor.ts" />
+    <TypeScriptCompile Include="app\votingApp\classes\chartType.ts" />
     <TypeScriptCompile Include="app\main.ts" />
-    <TypeScriptCompile Include="app\votingApp\new-poll-detail.component.ts" />
-    <TypeScriptCompile Include="app\votingApp\pollItem.ts" />
+    <TypeScriptCompile Include="app\votingApp\classes\pollItem.ts" />
+    <TypeScriptCompile Include="app\votingApp\components\footer.component.ts" />
+    <TypeScriptCompile Include="app\votingApp\components\header.component.ts" />
+    <TypeScriptCompile Include="app\votingApp\components\home.component.ts" />
+    <TypeScriptCompile Include="app\votingApp\components\main.component.ts" />
+    <TypeScriptCompile Include="app\votingApp\components\poll.item.component.ts" />
     <TypeScriptCompile Include="node_modules\ng2-charts\components\charts\charts.d.ts" />
     <TypeScriptCompile Include="node_modules\ng2-charts\ng2-charts.d.ts" />
   </ItemGroup>

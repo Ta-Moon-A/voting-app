@@ -1,15 +1,15 @@
 ﻿import { Component, Input, OnInit  } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 
-import {PollItem} from "./pollItem";
-import {ChartType} from "./chartType";
-import {ChartTypes} from "./chartType";
-import {ChartColor} from "./chartColor";
-import {ChartColors} from "./chartColor";
+import {PollItem} from "../classes/pollItem";
+import {ChartType} from "../classes/chartType";
+import {ChartTypes} from "../classes/chartType";
+import {ChartColor} from "../classes/chartColor";
+import {ChartColors} from "../classes/chartColor";
 
 @Component({
     selector: 'new-poll-detail',
-    templateUrl: '../content/templates/new-poll-template.html'
+    templateUrl: '../content/templates/poll.item.template.html'
 
 })
 export class NewPollDetailComponent implements OnInit {
@@ -45,4 +45,3 @@ export class NewPollDetailComponent implements OnInit {
 
 
 }
-

@@ -8,19 +8,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var PollDetailComponent = (function () {
-    function PollDetailComponent() {
+var core_1 = require("@angular/core");
+var AppComponent = (function () {
+    function AppComponent() {
     }
-    PollDetailComponent.prototype.ngOnInit = function () { };
-    PollDetailComponent = __decorate([
+    AppComponent = __decorate([
         core_1.Component({
-            selector: 'poll-detail',
-            template: "\n              \n              "
+            selector: "voting-app",
+            template: "<my-header></my-header>\n               <my-main></my-main>\n               <my-footer></my-footer>",
+            styleUrls: ['../content/styles/app.css'],
         }), 
         __metadata('design:paramtypes', [])
-    ], PollDetailComponent);
-    return PollDetailComponent;
+    ], AppComponent);
+    return AppComponent;
 }());
-exports.PollDetailComponent = PollDetailComponent;
-//# sourceMappingURL=poll-detail.component.js.map
+exports.AppComponent = AppComponent;
+//# sourceMappingURL=app.component.js.map

@@ -1,1 +1,0 @@
-//# sourceMappingURL=new.voting.item.js.map

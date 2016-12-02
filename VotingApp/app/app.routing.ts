@@ -1,19 +1,13 @@
 ﻿import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 
-
-import {HeroesComponent} from './heroSample/heroes.component';
-import {DashboardComponent} from './heroSample/dashboard.component';
-import {HeroDetailComponent} from './heroSample/hero-detail.component';
-import {NewPollDetailComponent} from "./votingApp/new-poll-detail.component";
-
+import {NewPollDetailComponent} from "./votingApp/components/poll.item.component";
+import {HomeComponent} from "./votingApp/components/home.component";
 
 export const appRoutes: Routes = [
-    { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-    { path: 'heroes', component: HeroesComponent },
-    { path: 'dashboard', component: DashboardComponent },
-    { path: 'detail/:id', component: HeroDetailComponent },
-    { path: 'new-poll', component: NewPollDetailComponent }
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: 'new-poll', component: NewPollDetailComponent },
+    { path: 'home', component: HomeComponent }
 ];
 
 
