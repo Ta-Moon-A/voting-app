@@ -117,6 +117,9 @@ ClientBin/
 *.dbmdl
 *.publishsettings
 
+#node_modules
+node_modules/
+
 # RIA/Silverlight projects
 Generated_Code/
 

@@ -30,10 +30,7 @@ export class NewPollDetailComponent implements OnInit {
     }
 
     ngOnInit() {
-        setTimeout(() => {
-            //debugger;
-            $('select').material_select();
-        }, 0);
+        
     }
 
     onOptionAdd() {
