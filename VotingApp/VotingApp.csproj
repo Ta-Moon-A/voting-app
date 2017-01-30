@@ -82,6 +82,7 @@
     <Content Include="content\images\logo3.png" />
     <Content Include="content\styles\app.css" />
     <Content Include="favicon.ico" />
+    <Content Include="gulpfile.js" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
@@ -137,6 +138,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="appjs\" />
     <Folder Include="content\js\" />
   </ItemGroup>
   <ItemGroup>
