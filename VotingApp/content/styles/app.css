@@ -3,6 +3,18 @@
     margin: auto !important;
 }
 
+.generalLeft {
+    float: left;
+}
+
+.generalRight {
+    float: right;
+}
+
+.generalFontWeight {
+    font-weight: bold;
+}
+
 .generalColor {
     color: #009688;
 }

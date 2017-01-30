@@ -1,3 +1,31 @@
 ﻿#header {
     margin-top: 10px;
 }
+
+
+.loginbtn {
+    position: relative;
+    right: 10px;
+    top: 20px;
+}
+
+.logintxt {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.twitter {
+    background-color: #0084b4;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.google {
+    background-color: red;
+}
+
+.linkedin {
+    background-color: #0077B5;
+}

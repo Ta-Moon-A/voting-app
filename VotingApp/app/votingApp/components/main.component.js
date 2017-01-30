@@ -15,7 +15,7 @@ var MainComponent = (function () {
     MainComponent = __decorate([
         core_1.Component({
             selector: "my-main",
-            template: "<main id=\"wrap\">\n                   <nav class=\"teal lighten-2\">\n                      <div class=\"nav-wrapper\">\n                         <ul id=\"nav-mobile\" class=\"left\">\n                            <li><a routerLink=\"/\" routerLinkActive=\"active\">Home</a></li>\n                            <li><a routerLink=\"/\" routerLinkActive=\"active\">My Polls</a></li>\n                            <li><a routerLink=\"/new-poll\" routerLinkActive=\"active\">New Poll</a></li>\n                         </ul>\n                      </div>\n                   </nav>\n                   <router-outlet></router-outlet>\n              </main>",
+            template: "<main id=\"wrap\">\n                   <nav class=\"teal\">\n                      <div class=\"nav-wrapper\">\n                         <ul id=\"nav-mobile\" class=\"left generalFontWeight\">\n                            <li><a routerLink=\"/\" routerLinkActive=\"active\">Home</a></li>\n                            <li><a routerLink=\"/\" routerLinkActive=\"active\">My Polls</a></li>\n                            <li><a routerLink=\"/new-poll\" routerLinkActive=\"active\">New Poll</a></li>\n                         </ul>\n                      </div>\n                   </nav>\n                   <router-outlet></router-outlet>\n              </main>",
             styleUrls: ['../content/styles/main.comp.css'],
         }), 
         __metadata('design:paramtypes', [])

@@ -5,24 +5,26 @@ import {Router} from "@angular/router";
     selector: "my-header",
     template: `<header>
                <div class="row" id="header">
-                     <div class="col s3 generalColor">
-                        <div style="float : left;">
+                     <div class="col l3 s3 generalColor generalWeight">
+                        <div class="generalLeft">
                         <a href="/" class="Link generalColor">
                            <h3>{{title}}</h3>
                         </a>
                      </div>
                      </div>
-                     <div class="col s6"></div>
-                     <div class="col s3">
-                            <div class="float : right">
-                                <a class="waves-effect waves-light btn  teal lighten-2" style="width : 100%"  >
-                                       <i class="fa fa-github fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Log in
-                                </a>
-                                <br><br>
-                                <a class="waves-effect waves-light btn  light-blue darken-4" style="width : 100%">
-                                      <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Log in
-                                </a>
-                            </div>
+                     <div class="col l3 s3"></div>
+                     <div class="col l6 s6">
+                        <div class="fixed-action-btn horizontal click-to-toggle loginbtn generalRight">
+                                    <a class="btn-floating btn-large teal logintxt">
+                                       <i class="" aria-hidden="true"></i>Log in
+                                    </a>
+                                    <ul>
+                                      <li><a class="btn-floating facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                      <li><a class="btn-floating twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                      <li><a class="btn-floating google"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                                      <li><a class="btn-floating linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    </ul>
+                         </div>
                      </div>
                 </div>
             </header>`,

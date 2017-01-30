@@ -18,7 +18,7 @@
     <AssemblyName>VotingApp</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44362</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -68,6 +68,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="content\libs\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="content\libs\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="content\libs\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="content\libs\font-awesome-4.7.0\HELP-US-OUT.txt" />
     <Content Include="content\styles\footer.comp.css" />
     <Content Include="content\styles\header.comp.css" />
     <Content Include="content\styles\main.comp.css" />
@@ -83,6 +87,39 @@
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
     <Content Include="typings.json" />
+    <Content Include="content\libs\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="content\libs\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="content\libs\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="content\libs\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="content\libs\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="content\libs\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="content\libs\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="content\libs\font-awesome-4.7.0\less\core.less" />
+    <Content Include="content\libs\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="content\libs\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="content\libs\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="content\libs\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="content\libs\font-awesome-4.7.0\less\list.less" />
+    <Content Include="content\libs\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="content\libs\font-awesome-4.7.0\less\path.less" />
+    <Content Include="content\libs\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="content\libs\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="content\libs\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="content\libs\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="content\libs\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="content\libs\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="content\libs\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="content\libs\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="content\libs\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="content\libs\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="content\libs\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="content\libs\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="content\libs\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="content\libs\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="content\libs\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="content\libs\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="content\libs\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="content\libs\font-awesome-4.7.0\scss\_variables.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -99,7 +136,9 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="content\js\" />
+  </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
